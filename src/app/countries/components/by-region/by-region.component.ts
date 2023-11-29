@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'by-region',
-    template: `<p>Region works!</p>`,
+    templateUrl: './by-region.component.html',
 })
 export class ByRegionComponent { }

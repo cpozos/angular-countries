@@ -1,7 +1,17 @@
 import { Component } from '@angular/core';
+import { CountriesService } from '../../services/countries.service';
 
 @Component({
     selector: 'by-capital',
-    template: `<p>byCapital works!</p>`,
+    templateUrl: './by-capital.component.html',
 })
-export class ByCapitalComponent { }
+export class ByCapitalComponent {
+
+  constructor(private countriesService: CountriesService) {
+  }
+
+  searchByCapital(capital: string) {
+    console.log({ capital });
+    this.countriesService.searchCapital(capital);
+  }
+}
