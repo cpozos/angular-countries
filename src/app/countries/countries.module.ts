@@ -7,18 +7,20 @@ import { HttpClientModule } from "@angular/common/http";
 import { CountriesService } from "./services/countries.service";
 import { CommonModule } from "@angular/common";
 import { CountriesTableComponent } from "./components/countries-table/countries-table.component";
+import { ByRegionComponent } from "./components/by-region/by-region.component";
 
 @NgModule({
   declarations: [
     ByCapitalComponent,
     ByCountryComponent,
+    ByRegionComponent,
     CountriesTableComponent
   ],
   imports: [
+    CommonModule,
     CountriesRoutingModule,
     SharedModule,
     HttpClientModule,
-    CommonModule
   ],
   providers: [
     CountriesService
