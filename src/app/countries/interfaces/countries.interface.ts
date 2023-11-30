@@ -1,3 +1,8 @@
 export interface Country {
-  name: string
+  name: CountryName,
+  population: number,
+}
+
+export interface CountryName {
+  common: string
 }
